@@ -1,6 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 import "./Intro.css";
-import Typewriter from "typewriter-effect"; // lib for tywriter effect
+import Typewriter from "typewriter-effect"; // lib for type writer effect
 
 export default function Intro() {
   return (

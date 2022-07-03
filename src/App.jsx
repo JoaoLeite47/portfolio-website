@@ -4,6 +4,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Topbar from "./components/topbar/Topbar";
 import Work from "./components/work/Work";
+import './App.css';
 
 function App() {
   return (

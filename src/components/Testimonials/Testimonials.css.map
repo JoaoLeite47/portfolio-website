@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,gBAAgB,EAAE,UAAU;CAC/B",
     "sources": [
-        "Testimonails.scss"
+        "Testimonials.scss"
     ],
     "names": [],
-    "file": "Testimonails.css"
+    "file": "Testimonials.css"
 }

@@ -1,9 +1,11 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.css";
 import { useEffect, useState } from "react";
+import { webPortfolio, contentPortfolio, featuredPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
   const list = [
     {
       id: "featured",
@@ -26,6 +28,23 @@ export default function Portfolio() {
       title: "Content",
     },
   ];
+
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      case "web":
+        setData(webPortfolio);
+        break;
+      case "content":
+        setData(contentPortfolio);
+        break;
+      // in the future, more cases going to be added
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]); // definy in which stage are the hook how define which of these works show on screen
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -40,48 +59,12 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQFzn5i9iTebgQ/company-logo_200_200/0/1578434154179?e=2159024400&v=beta&t=_fGf2ix4TGR_zHVSGGsMHsPThDbXWV0vfaLztL_e1jI"
-            alt="algo"
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQFzn5i9iTebgQ/company-logo_200_200/0/1578434154179?e=2159024400&v=beta&t=_fGf2ix4TGR_zHVSGGsMHsPThDbXWV0vfaLztL_e1jI"
-            alt="algo"
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQFzn5i9iTebgQ/company-logo_200_200/0/1578434154179?e=2159024400&v=beta&t=_fGf2ix4TGR_zHVSGGsMHsPThDbXWV0vfaLztL_e1jI"
-            alt="algo"
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQFzn5i9iTebgQ/company-logo_200_200/0/1578434154179?e=2159024400&v=beta&t=_fGf2ix4TGR_zHVSGGsMHsPThDbXWV0vfaLztL_e1jI"
-            alt="algo"
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQFzn5i9iTebgQ/company-logo_200_200/0/1578434154179?e=2159024400&v=beta&t=_fGf2ix4TGR_zHVSGGsMHsPThDbXWV0vfaLztL_e1jI"
-            alt="algo"
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQFzn5i9iTebgQ/company-logo_200_200/0/1578434154179?e=2159024400&v=beta&t=_fGf2ix4TGR_zHVSGGsMHsPThDbXWV0vfaLztL_e1jI"
-            alt="algo"
-          />
-          <h3>Banking App</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="algo" />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );

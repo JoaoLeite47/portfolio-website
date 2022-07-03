@@ -1,6 +1,6 @@
-import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import "./Intro.css";
+import Typewriter from "typewriter-effect"; // lib for tywriter effect
 
 export default function Intro() {
   return (
@@ -17,7 +17,16 @@ export default function Intro() {
             João <span className="name">Leite 🐱‍👤</span>
           </h1>
           <h3>
-            Developer <span></span>
+            <Typewriter
+              className="profision"
+              options={{
+                strings: ["Full_Stack_Developer", "Graphic_Designer", "Lover_of_Challenges!"],
+                autoStart: true,
+                delay: 60,
+                loop: true,
+                cursor: "|",
+              }}
+            />
           </h3>
         </div>
         <a href="#portfolio">

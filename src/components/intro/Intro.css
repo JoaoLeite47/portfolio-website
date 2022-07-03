@@ -1,4 +1,105 @@
 .intro {
-  background-color: lightpink;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #3a0a46), to(#2f012d));
+  background: linear-gradient(90deg, #020024 0%, #3a0a46 35%, #2f012d 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro .left {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  overflow: hidden;
+}
+
+.intro .left .imgContainer {
+  width: 700px;
+  height: 700px;
+  background-color: rgba(255, 166, 0, 0);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+}
+
+.intro .left .imgContainer img {
+  height: 90%;
+}
+
+.intro .right {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  position: relative;
+}
+
+.intro .right .wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .right .wrapper h1 {
+  font-size: 70px;
+  margin: 10px 0;
+  color: white;
+}
+
+.intro .right .wrapper h1 .name {
+  color: #dd01ce;
+  font-weight: 300;
+}
+
+.intro .right .wrapper h2 {
+  font-size: 35px;
+  color: white;
+}
+
+.intro .right .wrapper h3 {
+  font-size: 30px;
+  color: white;
+}
+
+.intro .right a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+
+.intro .right a .img-down {
+  width: 30px;
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+  color: wheat;
+}
+
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=Intro.css.map */

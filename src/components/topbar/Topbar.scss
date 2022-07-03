@@ -3,12 +3,12 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: white;
-  color: $mainCollor;
+  background: $gradientCollor;
+  color: white;
   position: fixed;
   top: 0;
   z-index: 3;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 
   .wrapper {
     padding: 10px 30px;
@@ -23,7 +23,7 @@
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
-        color: lightcoral;
+        color: white;
         margin-right: 40px;
       }
       .itemContainer {
@@ -55,15 +55,15 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainCollor;
+          background-color: $lettreCollor;
           transform-origin: left;
-          transition: all .5s ease;
+          transition: all 0.5s ease;
         }
       }
     }
   }
   &.active {
-    background-color: $mainCollor;
+    background: $lettreCollor;
     color: white;
 
     .hamburguer {
@@ -73,11 +73,11 @@
           transform: rotate(45deg);
         }
         &:nth-child(2) {
-            opacity: 0;
+          opacity: 0;
         }
         &:last-child {
-            background-color: white;
-            transform: rotate(-45deg);
+          background-color: white;
+          transform: rotate(-45deg);
         }
       }
     }

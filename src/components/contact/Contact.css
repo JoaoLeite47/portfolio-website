@@ -1,4 +1,54 @@
 .contact {
-  background-color: lightblue;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.contact .left img {
+  height: 100%;
+}
+
+.contact .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .right h2 {
+  font-size: 30px;
+}
+
+.contact .right h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.contact .right .contacts {
+  margin: 10px;
+}
+
+.contact .right .contacts a {
+  margin: 10px;
 }
 /*# sourceMappingURL=Contact.css.map */

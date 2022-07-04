@@ -15,9 +15,22 @@
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .testimonials {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .testimonials h1 {
   font-size: 50px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .testimonials h1 {
+    font-size: 20px;
+  }
 }
 
 .testimonials .container {
@@ -32,6 +45,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
 }
 
 .testimonials .container .card {
@@ -52,14 +75,29 @@
   padding: 20px;
   background-color: #57362c;
   color: white;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card {
+    height: 180px;
+    margin: 10px 0;
+  }
 }
 
 .testimonials .container .card.featured {
   width: 300px;
   height: 75%;
   margin: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card.featured {
+    width: 250px;
+    height: 280px;
+    margin: 1px;
+  }
 }
 
 .testimonials .container .card:hover {
@@ -92,10 +130,24 @@
   margin: 0 30px;
 }
 
+@media (max-width: 768px) {
+  .testimonials .container .card .top img.user {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .testimonials .container .card .center {
   padding: 10px;
   border-radius: 10px;
   background-color: #3d251e;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card .center {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
 
 .testimonials .container .card .bottom {
@@ -118,7 +170,19 @@
   margin-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+  .testimonials .container .card .bottom h3 {
+    font-size: 13px;
+  }
+}
+
 .testimonials .container .card .bottom h4 {
   color: #15023a;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card .bottom h4 {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=Testimonials.css.map */

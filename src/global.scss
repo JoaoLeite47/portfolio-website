@@ -8,3 +8,11 @@ $gradientCollor: linear-gradient(
   rgba(58, 10, 70, 1) 35%,
   rgba(47, 1, 45, 1) 100%
 );
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}){
+    @content
+  }
+} 

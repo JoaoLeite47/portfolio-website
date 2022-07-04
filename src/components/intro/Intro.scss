@@ -4,6 +4,11 @@
   background: $gradientCollor;
   display: flex;
 
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -18,8 +23,16 @@
       justify-content: center;
       float: right;
 
+      @include mobile {
+        align-items: flex-start
+      }
+
       img {
         height: 90%;
+
+        @include mobile {
+          height: 50%;
+        }
       }
     }
   }
@@ -35,10 +48,19 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile{
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 {
         font-size: 70px;
         margin: 10px 0;
         color: white;
+
+        @include mobile {
+          font-size: 40px;
+        }
 
         .name {
           color: $lettreCollor;
@@ -52,6 +74,10 @@
       h3 {
         font-size: 30px;
         color: white;
+
+        @include mobile {
+          font-size: 20px;
+        }
 
         .profision {
           color: $lettreCollor;

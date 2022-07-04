@@ -67,6 +67,27 @@
   font-weight: 500;
 }
 
+.topbar .wrapper .left .itemContainer .curriculum {
+  font-size: 20px;
+  border: 20px black;
+  background: #dd01ce;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.topbar .wrapper .left .itemContainer .curriculum a {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  margin: 10px;
+  padding: 1px;
+}
+
+.topbar .wrapper .left .itemContainer .curriculum:hover {
+  background: #15023a;
+}
+
 .topbar .wrapper .right .hamburguer {
   width: 32px;
   height: 25px;

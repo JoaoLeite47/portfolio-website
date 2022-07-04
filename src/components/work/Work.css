@@ -145,7 +145,7 @@
   color: white;
 }
 
-.work .slider .container .item .left .leftContainer span {
+.work .slider .container .item .left .leftContainer span a {
   font-size: 12px;
   font-weight: 600;
   text-decoration: underline;

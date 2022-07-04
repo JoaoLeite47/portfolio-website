@@ -88,11 +88,13 @@
               color: white;
             }
             span {
-              font-size: 12px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
-              color: white;
+              a {
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+                color: white;
+              }
             }
           }
         }

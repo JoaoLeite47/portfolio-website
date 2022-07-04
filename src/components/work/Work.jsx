@@ -12,6 +12,7 @@ export default function Work() {
       title: "API Pizza Fresh",
       desc: "API Restful para um ecommerce de pizza! Uma experiência nova ultilizando o Nest.JS! Uma tecnologia fantástica que realmente me abriu muitos horizontes na construção de aplicações web.",
       img: "https://user-images.githubusercontent.com/100146681/177185523-f5219eda-7e0b-45e4-8092-885bdcb7bb60.png",
+      projects: "https://github.com/JoaoLeite47/pizza_fresh_server",
     },
     {
       id: "2",
@@ -19,6 +20,7 @@ export default function Work() {
       title: "El Geladon",
       desc: "Construido em React Js, El Geladon é um ecommerce de paleteria mexicana! Um projeto que me permitiu aprender a utilizar o React.JS e a construir um ecommerce como um projeto de conclusão de curso.",
       img: "https://user-images.githubusercontent.com/100146681/177061189-c7d16ab1-e3fa-411d-87b3-48d41b649bcf.png",
+      projects: "https://github.com/JoaoLeite47/cardapio-el-geladon-client",
     },
     {
       id: "3",
@@ -26,6 +28,7 @@ export default function Work() {
       title: "API El Geladon",
       desc: "Um projeto delicioso!! Construido em Node.js com Express, Acabou se tornando uma experiência muito divertida em sua produção, e claro...com banco de dados online!",
       img: "https://user-images.githubusercontent.com/100146681/177061161-ce1b693b-f812-4359-a1d4-428ed3cfb000.png",
+      projects: "https://github.com/JoaoLeite47/elgeladon-server-react-mongoDB",
     },
   ];
 
@@ -51,7 +54,9 @@ export default function Work() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span>
+                    <a href={d.projects}>Show me the code!</a>
+                  </span>
                 </div>
               </div>
               <div className="right">

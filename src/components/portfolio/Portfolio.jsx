@@ -27,7 +27,7 @@ export default function Portfolio() {
       id: "content",
       title: "Content",
     },
-  ];
+  ]; // list of categories for the portfolio page 
 
   useEffect(() => {
     switch (selected) {

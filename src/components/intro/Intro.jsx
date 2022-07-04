@@ -20,7 +20,7 @@ export default function Intro() {
             <Typewriter
               className="profision"
               options={{
-                strings: ["Full_Stack_Developer", "Graphic_Designer", "Lover_of_Challenges!"],
+                strings: ["Full_Stack_Developer", "Graphic_Designer", "Love_a_Good_Challenge!"],
                 autoStart: true,
                 delay: 60,
                 loop: true,

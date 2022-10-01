@@ -1,7 +1,7 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.css";
 import { useEffect, useState } from "react";
-import { webPortfolio, contentPortfolio, featuredPortfolio } from "../../data";
+import { webPortfolio, ApisPortfolio, featuredPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -24,8 +24,8 @@ export default function Portfolio() {
       title: "Design",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "APIs",
+      title: "APIs",
     },
   ]; // list of categories for the portfolio page 
 
@@ -37,8 +37,8 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "APIs":
+        setData(ApisPortfolio);
         break;
       // in the future, more cases going to be added
       default:

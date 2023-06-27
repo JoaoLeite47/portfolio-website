@@ -1,5 +1,5 @@
 import PortfolioList from "../portfolioList/PortfolioList";
-import "./Portfolio.css";
+import "./Portfolio.scss";
 import { useEffect, useState } from "react";
 import { webPortfolio, ApisPortfolio, featuredPortfolio } from "../../data";
 
@@ -27,7 +27,7 @@ export default function Portfolio() {
       id: "APIs",
       title: "APIs",
     },
-  ]; // list of categories for the portfolio page 
+  ]; // list of categories for the portfolio page
 
   useEffect(() => {
     switch (selected) {
@@ -62,7 +62,16 @@ export default function Portfolio() {
         {data.map((d) => (
           <div className="item">
             <img src={d.img} alt="algo" />
-            <h3>{d.title}</h3>
+            <h3>
+              <a
+                className="d-link"
+                target="_blank"
+                rel="noreferrer"
+                href={d.link}
+              >
+                {d.title}
+              </a>{" "}
+            </h3>
           </div>
         ))}
       </div>

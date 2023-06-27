@@ -14,7 +14,7 @@ export default function Intro() {
         <div className="wrapper">
           <h2>Hello There, I'm</h2>
           <h1>
-            João <span className="name">Leite 🐱‍👤</span>
+            João <span className="name">Leite</span>
           </h1>
           <h3>
             <Typewriter

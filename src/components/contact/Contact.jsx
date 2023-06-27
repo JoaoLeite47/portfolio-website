@@ -17,14 +17,26 @@ export default function Contact() {
       <div className="right">
         <h2>Contact.</h2>
         <div className="contacts">
-          <a href="https://github.com/JoaoLeite47">
-            <BsGithub size="5em" />
+          <a
+            href="https://github.com/JoaoLeite47"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub size="5em" color="blue" />
           </a>
-          <a href="https://www.linkedin.com/in/joaoleitesouza/">
-            <BsLinkedin size="5em" />
+          <a
+            href="https://www.linkedin.com/in/joaoleitesouza/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin size="5em" color="blue" />
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5571986149734&text=Olá%20João!!%20Estou%20aqui%20pelo%20link%20em%20seu%20site!">
-            <BsWhatsapp size="5em" />
+          <a
+            href="https://api.whatsapp.com/send?phone=5571986149734&text=Olá%20João!!%20Estou%20aqui%20pelo%20link%20em%20seu%20site!"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsWhatsapp size="5em" color="blue" />
           </a>
           <h3>Thanks! I'll reply soon! :D</h3>
         </div>

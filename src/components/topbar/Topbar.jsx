@@ -21,11 +21,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <button className="curriculum">
               <a
-                href="https://drive.google.com/file/d/1Cp1LFzv0ZkSfDE9kfPrLylnWIZD4K2nk/view?usp=sharing"
+                href="https://docs.google.com/document/d/1OnuggyeOn8spIlLcV7f0wX210SR2qIph/edit?usp=sharing&ouid=112938283348707462695&rtpof=true&sd=true"
                 target="_blank"
                 rel="noreferrer"
               >
-                Curriculum Vitae
+                CV
               </a>
             </button>
           </div>

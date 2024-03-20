@@ -31,9 +31,9 @@ export const featuredPortfolio = [
   },
   {
     id: 6,
-    title: "Vigilantes do Sono",
+    title: "Voe + Travel",
     img: "https://raw.githubusercontent.com/MonthlySummary-equipe3/client/main/public/imgTest/bemvindo.png?token=GHSAT0AAAAAACDT4Y7YSW3D3GYZH62PVHICZE3CJRA",
-    link: "https://github.com/MonthlySummary-equipe3/client",
+    link: "https://voemaistravel.com.br",
   },
 ];
 
